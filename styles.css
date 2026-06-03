@@ -21,34 +21,35 @@ body {
 }
 
 .page {
-  width: min(1100px, calc(100vw - 2rem));
+  width: min(980px, calc(100vw - 2rem));
   margin: 0 auto;
-  padding: 2rem 0 4rem;
+  padding: 1.5rem 0 3rem;
 }
 
-.hero,
-.grid article,
-.sample-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  box-shadow: none;
+.site-header,
+.section {
+  border-bottom: 1px solid var(--line);
 }
 
-.hero {
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  border-radius: 0.75rem;
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.25rem 0 1.25rem;
 }
 
-.eyebrow,
-h1,
-h2,
-.price {
-  font-family: inherit;
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
 }
 
 .eyebrow {
-  margin: 0 0 1rem;
-  color: var(--accent-deep);
+  margin: 0 0 0.5rem;
+  color: var(--muted);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0;
@@ -57,15 +58,14 @@ h2,
 
 h1 {
   margin: 0;
-  max-width: 16ch;
-  font-size: clamp(2.1rem, 5vw, 3.6rem);
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  max-width: none;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   font-weight: 700;
 }
 
 .lede,
-.meta,
 li,
 p {
   font-size: clamp(1rem, 1.8vw, 1.08rem);
@@ -73,117 +73,79 @@ p {
 }
 
 .lede {
-  max-width: 40rem;
+  max-width: 50rem;
   color: var(--muted);
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem 0 1rem;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.85rem 1.1rem;
-  border-radius: 0.55rem;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-decoration: none;
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.button-solid {
-  background: var(--accent);
-  color: #fff6ef;
-}
-
-.button-ghost {
-  border: 1px solid var(--line);
-  color: var(--ink);
-}
-
-.meta,
-.price-sub {
-  color: var(--muted);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.grid article,
-.sample-card {
-  padding: 1.5rem;
-  border-radius: 0.75rem;
+.section {
+  padding: 1.25rem 0;
 }
 
 h2 {
   margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-size: 1.05rem;
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
   text-transform: none;
   letter-spacing: 0;
 }
 
 ul {
-  margin: 0;
+  margin: 0.25rem 0 0;
   padding-left: 1.25rem;
 }
 
-.band {
-  margin: 1rem 0;
-  padding: 1.5rem;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
 }
 
-.band p {
-  margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 2rem;
+  margin: 1.25rem 0 0;
+}
+
+.facts div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.facts dt {
+  color: var(--muted);
+  font-size: 0.92rem;
   font-weight: 600;
 }
 
-.price {
+.facts dd {
   margin: 0;
-  font-size: clamp(1.7rem, 4vw, 2.4rem);
 }
 
-.sample {
-  margin-top: 1rem;
+.sample-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.4rem;
 }
 
-.sample-subject {
-  color: var(--accent-deep);
-}
-
-.sample-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: baseline;
-  margin-top: 1rem;
+.sample-table th,
+.sample-table td {
+  padding: 0.7rem 0.6rem;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
   font-size: 0.98rem;
 }
 
-.sample-row:first-child {
-  margin-top: 0;
-}
-
-.sample-row span {
+.sample-table th {
+  font-size: 0.92rem;
   color: var(--muted);
-  white-space: nowrap;
 }
 
 .sample-note,
 .disclosure p,
-.footer a {
+.header-links a,
+.facts a {
   color: var(--muted);
 }
 
@@ -192,36 +154,18 @@ ul {
 }
 
 .disclosure {
-  margin-top: 1rem;
-  padding: 1rem 0;
-  border-top: 1px solid var(--line);
-}
-
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 1rem;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.legal-page .hero {
-  margin-bottom: 1rem;
-}
-
-.legal-grid {
-  margin-top: 0;
+  border-bottom: 0;
 }
 
 @media (max-width: 800px) {
-  .grid {
+  .site-header,
+  .two-col,
+  .facts {
     grid-template-columns: 1fr;
+    display: grid;
   }
 
-  h1 {
-    max-width: none;
+  .site-header {
+    gap: 0.5rem;
   }
 }
