@@ -231,6 +231,35 @@ ul {
   border-bottom: 0;
 }
 
+.legal-page {
+  width: min(980px, calc(100vw - 2.5rem));
+}
+
+.legal-hero {
+  display: block;
+}
+
+.legal-stack {
+  margin-top: 0.25rem;
+}
+
+.legal-section {
+  padding-right: 0;
+}
+
+.legal-section h2 {
+  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
+}
+
+.legal-section p,
+.legal-section li {
+  max-width: 52rem;
+}
+
+.legal-contact {
+  border-bottom: 0;
+}
+
 @media (max-width: 800px) {
   .site-header,
   .hero,
