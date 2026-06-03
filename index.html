@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PermitPulse | Chicago Roofing Permit Alerts</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -119,40 +120,42 @@
           </div>
           <p class="section-aside">Illustrative rows from the current Chicago roofing feed.</p>
         </div>
-        <table class="sample-table">
-          <thead>
-            <tr>
-              <th>Permit</th>
-              <th>Issued</th>
-              <th>Address</th>
-              <th>Tag</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>101074885</td>
-              <td>2026-05-29</td>
-              <td>2450 N CENTRAL AVE</td>
-              <td>Commercial or multifamily</td>
-              <td>Roof replacement, 12,500 sq. ft., exterior roof</td>
-            </tr>
-            <tr>
-              <td>101074398</td>
-              <td>2026-05-28</td>
-              <td>732 W 60TH PL</td>
-              <td>Strong residential lead</td>
-              <td>Complete house roof replacement, 1,770 sq. ft., asphalt shingles</td>
-            </tr>
-            <tr>
-              <td>101073349</td>
-              <td>2026-05-27</td>
-              <td>6435 N CALIFORNIA AVE</td>
-              <td>Review manually</td>
-              <td>Roof replacement, 12,000 sq. ft., built-up roof</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table class="sample-table">
+            <thead>
+              <tr>
+                <th>Permit</th>
+                <th>Issued</th>
+                <th>Address</th>
+                <th>Tag</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Permit">101074885</td>
+                <td data-label="Issued">2026-05-29</td>
+                <td data-label="Address">2450 N CENTRAL AVE</td>
+                <td data-label="Tag">Commercial or multifamily</td>
+                <td data-label="Notes">Roof replacement, 12,500 sq. ft., exterior roof</td>
+              </tr>
+              <tr>
+                <td data-label="Permit">101074398</td>
+                <td data-label="Issued">2026-05-28</td>
+                <td data-label="Address">732 W 60TH PL</td>
+                <td data-label="Tag">Strong residential lead</td>
+                <td data-label="Notes">Complete house roof replacement, 1,770 sq. ft., asphalt shingles</td>
+              </tr>
+              <tr>
+                <td data-label="Permit">101073349</td>
+                <td data-label="Issued">2026-05-27</td>
+                <td data-label="Address">6435 N CALIFORNIA AVE</td>
+                <td data-label="Tag">Review manually</td>
+                <td data-label="Notes">Roof replacement, 12,000 sq. ft., built-up roof</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p class="sample-note">
           Sample shown for illustration from public records. Some entries require
           manual review before outreach, and a permit record alone does not
