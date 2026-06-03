@@ -6,16 +6,7 @@ Hi {{buyer_name}},
 
 Here are today's fresh Chicago roofing permits worth reviewing.
 
-## 1. 7506 S VERNON AVE
-
-- Owner: MASON SEAN
-- Issued: 2026-06-01
-- Applied: 2026-05-29
-- Permit: `B200472448`
-- Fit: Commercial or multifamily
-- Work: Roof replacement, 3,500 sq. ft., mineral-surfaced roll roofing
-
-## 2. 2450 N CENTRAL AVE
+## 1. 2450 N CENTRAL AVE
 
 - Owner: CENTRAL NURSING HOME
 - Issued: 2026-06-01
@@ -24,7 +15,7 @@ Here are today's fresh Chicago roofing permits worth reviewing.
 - Fit: Commercial or multifamily
 - Work: Roof replacement, 12,500 sq. ft., exterior roof
 
-## 3. 732 W 60TH PL
+## 2. 732 W 60TH PL
 
 - Owner: KERR ELLEN
 - Issued: 2026-06-01
@@ -32,6 +23,15 @@ Here are today's fresh Chicago roofing permits worth reviewing.
 - Permit: `B200472712`
 - Fit: Strong residential lead
 - Work: Complete house roof replacement, 1,770 sq. ft., asphalt shingles
+
+## 3. 6435 N CALIFORNIA AVE
+
+- Owner: NICKS ROOFING & SIDING LLC
+- Issued: 2026-06-01
+- Applied: 2026-06-01
+- Permit: `B200472741`
+- Fit: Review manually
+- Work: Roof replacement, 12,000 sq. ft., built-up roof
 
 ## 4. 701 E 79TH ST
 
@@ -42,14 +42,14 @@ Here are today's fresh Chicago roofing permits worth reviewing.
 - Fit: Commercial or multifamily
 - Work: Roof replacement, 3,500 sq. ft., mineral-surfaced roll roofing
 
-## 5. 6435 N CALIFORNIA AVE
+## 5. 7506 S VERNON AVE
 
-- Owner: NICKS ROOFING & SIDING LLC
+- Owner: MASON SEAN
 - Issued: 2026-06-01
-- Applied: 2026-06-01
-- Permit: `B200472741`
-- Fit: Review manually
-- Work: Roof replacement, 12,000 sq. ft., built-up roof
+- Applied: 2026-05-29
+- Permit: `B200472448`
+- Fit: Commercial or multifamily
+- Work: Roof replacement, 3,500 sq. ft., mineral-surfaced roll roofing
 
 Notes:
 
