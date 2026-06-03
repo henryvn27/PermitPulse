@@ -1,11 +1,8 @@
 :root {
-  --bg: #f6f7f8;
-  --paper: #ffffff;
-  --ink: #18212b;
-  --muted: #5a6675;
-  --accent: #1f4b7a;
-  --accent-deep: #17385c;
-  --line: rgba(24, 33, 43, 0.12);
+  --bg: #ffffff;
+  --ink: #161616;
+  --muted: #555555;
+  --line: #d9d9d9;
 }
 
 * {
@@ -17,13 +14,13 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .page {
-  width: min(980px, calc(100vw - 2rem));
+  width: min(920px, calc(100vw - 2rem));
   margin: 0 auto;
-  padding: 1.5rem 0 3rem;
+  padding: 1rem 0 3rem;
 }
 
 .site-header,
@@ -36,7 +33,7 @@ body {
   justify-content: space-between;
   gap: 1rem;
   align-items: flex-start;
-  padding: 0.25rem 0 1.25rem;
+  padding: 0.15rem 0 1rem;
 }
 
 .header-links {
@@ -44,14 +41,14 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   padding-top: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .eyebrow {
   margin: 0 0 0.5rem;
   color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
 }
@@ -59,17 +56,17 @@ body {
 h1 {
   margin: 0;
   max-width: none;
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: 0;
   font-weight: 700;
 }
 
 .lede,
 li,
 p {
-  font-size: clamp(1rem, 1.8vw, 1.08rem);
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.45;
 }
 
 .lede {
@@ -78,13 +75,14 @@ p {
 }
 
 .section {
-  padding: 1.25rem 0;
+  padding: 1rem 0;
 }
 
 h2 {
   margin-top: 0;
   margin-bottom: 0.9rem;
-  font-size: 1rem;
+  font-size: 1.02rem;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: 0;
 }
@@ -130,15 +128,15 @@ ul {
 
 .sample-table th,
 .sample-table td {
-  padding: 0.7rem 0.6rem;
+  padding: 0.65rem 0.5rem;
   border-top: 1px solid var(--line);
   vertical-align: top;
   text-align: left;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
 }
 
 .sample-table th {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   color: var(--muted);
 }
 
