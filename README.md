@@ -49,4 +49,4 @@ python3 permitpulse_chicago_roofing.py --since 2026-05-25 --until 2026-06-01 --f
 Current business judgment:
 
 - The first paid pilot is launch-ready with a manual payment path.
-- Linear is currently blocked by `401: Reauthentication required`, so project and issue creation still need to be backfilled there once access is restored.
+- GitHub Issues/Projects are the active engineering tracker. Do not backfill work into Linear; historical Linear records are provenance only.
